@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-10-23T21:00:18.790147" rpa="false" schemaversion="5">
+<suite id="s1" name="Test demo r" source="C:\Users\akash\PycharmProjects\Rortframework\test_cases\Test_demo_r.robot">
+<test id="s1-t1" name="testregister" line="15">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-10-23T21:00:19.247369" elapsed="0.000997"/>
+</kw>
+<kw name="open my browser register" owner="login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-23T21:00:19.249363" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-23T21:00:19.249363" elapsed="9.951793"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-23T21:00:29.203914" elapsed="0.121925"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T21:00:29.327815" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${register_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T21:00:29.326883" elapsed="0.796256"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-10-23T21:00:19.248905" elapsed="10.876115"/>
+</kw>
+<kw name="Enter gender" owner="login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-23T21:00:30.130006" level="INFO">Clicking element 'xpath://label[text()='Male']/..//input'.</msg>
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-23T21:00:30.129140" elapsed="0.121578"/>
+</kw>
+<status status="PASS" start="2024-10-23T21:00:30.128009" elapsed="0.122709"/>
+</kw>
+<kw name="Enter fname" owner="login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-23T21:00:30.251681" level="INFO">Typing text 'Akash' into text field 'Akash'.</msg>
+<msg time="2024-10-23T21:00:40.495194" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-23T21:00:40.496191" level="FAIL">Element with locator 'Akash' not found.</msg>
+<arg>${fname}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-23T21:00:30.251681" elapsed="10.251941">Element with locator 'Akash' not found.</status>
+</kw>
+<arg>${Fname}</arg>
+<status status="FAIL" start="2024-10-23T21:00:30.250718" elapsed="10.253451">Element with locator 'Akash' not found.</status>
+</kw>
+<kw name="Enter lname" owner="login">
+<arg>${Lname}</arg>
+<status status="NOT RUN" start="2024-10-23T21:00:40.504169" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Email" owner="login">
+<arg>${Email}</arg>
+<status status="NOT RUN" start="2024-10-23T21:00:40.505168" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Passward" owner="login">
+<arg>${Password}</arg>
+<status status="NOT RUN" start="2024-10-23T21:00:40.505168" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Confirm_p" owner="login">
+<arg>${Password}</arg>
+<status status="NOT RUN" start="2024-10-23T21:00:40.505168" elapsed="0.000996"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="NOT RUN" start="2024-10-23T21:00:40.506164" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-23T21:00:19.246392" elapsed="21.259772">Element with locator 'Akash' not found.</status>
+</test>
+<status status="FAIL" start="2024-10-23T21:00:18.792932" elapsed="21.715227"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test demo r">Test demo r</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

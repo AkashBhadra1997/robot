@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-11-01T12:39:36.052479" rpa="false" schemaversion="5">
+<suite id="s1" name="Get Links" source="C:\Users\akash\PycharmProjects\Rortframework\testcasess2\get_links.robot">
+<test id="s1-t1" name="click action" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:36.785882" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/simple_context_menu.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-01T12:39:36.784885" elapsed="5.191543"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-01T12:39:41.993380" elapsed="0.000997"/>
+</kw>
+<kw name="all_link">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:45.703697" level="INFO">${links} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.7")&gt;, &lt;selenium.webdrive...</msg>
+<var>${links}</var>
+<arg>xpath://a</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:41.996372" elapsed="3.707325"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:46.882083" level="INFO">${href} = http://demo.guru99.com/test/login.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:45.705693" elapsed="1.176390"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:46.882083" elapsed="0.002002"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.7")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:45.704694" elapsed="1.179391"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:47.897749" level="INFO">${href} = http://demo.guru99.com/test/login.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:46.885082" elapsed="1.012667"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:47.898747" elapsed="0.000997"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.8")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:46.884085" elapsed="1.016657"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:48.915495" level="INFO">${href} = https://demo.guru99.com/test/simple_context_menu.html#</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:47.901740" elapsed="1.013755"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:48.915495" elapsed="0.002278"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.9")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:47.900742" elapsed="1.017031"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:49.936008" level="INFO">${href} = https://demo.guru99.com/test/flash-testing.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:48.918490" elapsed="1.017518"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:49.937006" elapsed="0.000998"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.10")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:48.918490" elapsed="1.019514"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:50.954441" level="INFO">${href} = https://demo.guru99.com/test/radio.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:49.939004" elapsed="1.015437"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:50.955438" elapsed="0.000949"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.11")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:49.938004" elapsed="1.018383"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:51.974559" level="INFO">${href} = https://demo.guru99.com/test/table.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:50.957392" elapsed="1.017167"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:51.975125" elapsed="0.001005"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.12")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:50.957392" elapsed="1.018738"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:52.990522" level="INFO">${href} = https://demo.guru99.com/test/link.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:51.977128" elapsed="1.013394"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:52.991042" elapsed="0.001004"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.13")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:51.977128" elapsed="1.014918"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:54.004165" level="INFO">${href} = https://demo.guru99.com/test/ajax.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:52.993043" elapsed="1.011122"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:54.005166" elapsed="0.004988"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.14")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:52.992046" elapsed="1.018108"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:55.053011" level="INFO">${href} = https://demo.guru99.com/test/block.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:54.010154" elapsed="1.042857"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:55.053011" elapsed="0.000961"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.15")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:54.010154" elapsed="1.043818"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:56.066110" level="INFO">${href} = https://demo.guru99.com/test/delete_customer.php</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:55.054968" elapsed="1.011142"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:56.067196" elapsed="0.004898"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.16")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:55.053972" elapsed="1.018122"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:57.102825" level="INFO">${href} = https://demo.guru99.com/test/yahoo.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:56.073093" elapsed="1.029732"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:57.103815" elapsed="0.000996"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.17")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:56.073093" elapsed="1.033713"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:58.159017" level="INFO">${href} = https://demo.guru99.com/test/tooltip.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:57.106806" elapsed="1.053214"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:58.160020" elapsed="0.002992"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.18")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:57.106806" elapsed="1.057203"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:39:59.201235" level="INFO">${href} = https://demo.guru99.com/test/upload/</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:58.164009" elapsed="1.037226"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:39:59.201751" elapsed="0.001995"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.19")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:58.164009" elapsed="1.040336"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:00.218747" level="INFO">${href} = https://demo.guru99.com/test/login.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:39:59.204745" elapsed="1.014002"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:00.219743" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.20")&gt;</var>
+<status status="PASS" start="2024-11-01T12:39:59.204745" elapsed="1.016135"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:01.238018" level="INFO">${href} = https://demo.guru99.com/test/social-icon.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:00.220880" elapsed="1.017138"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:01.238532" elapsed="0.001118"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.21")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:00.220880" elapsed="1.018770"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:02.257812" level="INFO">${href} = https://demo.guru99.com/test/autoit.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:01.240532" elapsed="1.017280"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:02.258305" elapsed="0.001003"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.22")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:01.239650" elapsed="1.019817"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:03.284454" level="INFO">${href} = https://demo.guru99.com/test/facebook.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:02.260389" elapsed="1.024065"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:03.285479" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.23")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:02.260305" elapsed="1.026114"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:04.298642" level="INFO">${href} = https://demo.guru99.com/test/guru99home/</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:03.286419" elapsed="1.012223"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:04.298642" elapsed="0.001290"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.24")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:03.286419" elapsed="1.014219"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:05.318653" level="INFO">${href} = https://demo.guru99.com/test/guru99home/scrolling.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:04.301636" elapsed="1.017017"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:05.318653" elapsed="0.001267"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.25")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:04.300638" elapsed="1.019282"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:06.335043" level="INFO">${href} = https://demo.guru99.com/test/image_upload/</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:05.320655" elapsed="1.014388"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:06.335043" elapsed="0.001364"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.26")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:05.319920" elapsed="1.016487"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:07.349411" level="INFO">${href} = https://demo.guru99.com/test/cookie/selenium_aut.php</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:06.337039" elapsed="1.012372"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:07.349411" elapsed="0.001994"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.27")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:06.337039" elapsed="1.014366"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:08.370645" level="INFO">${href} = https://demo.guru99.com/test/drag_drop.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:07.351405" elapsed="1.019240"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:08.371644" elapsed="0.001232"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.28")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:07.351405" elapsed="1.021471"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:09.389406" level="INFO">${href} = https://demo.guru99.com/test/</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:08.373643" elapsed="1.015763"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:09.389406" elapsed="0.002999"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.29")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:08.373643" elapsed="1.018762"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:10.469708" level="INFO">${href} = http://demo.guru99.com/insurance/v1/index.php</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:09.393402" elapsed="1.076306"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:10.469708" elapsed="0.001002"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.30")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:09.392405" elapsed="1.078305"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:11.481700" level="INFO">${href} = http://demo.guru99.com/Agile_Project/Agi_V1/</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:10.470710" elapsed="1.010990"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:11.481700" elapsed="0.001003"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.31")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:10.470710" elapsed="1.011993"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:12.495723" level="INFO">${href} = http://demo.guru99.com/V1/index.php</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:11.483703" elapsed="1.012020"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:12.496772" elapsed="0.000000"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.32")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:11.483703" elapsed="1.013069"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:13.512541" level="INFO">${href} = http://demo.guru99.com/Security/SEC_V1/index.php</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:12.498720" elapsed="1.013821"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:13.512541" elapsed="0.001280"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.33")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:12.497799" elapsed="1.016022"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:14.527927" level="INFO">${href} = http://demo.guru99.com/telecom/index.html</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:13.514547" elapsed="1.013380"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:14.528438" elapsed="0.001002"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.34")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:13.513821" elapsed="1.015619"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:15.553952" level="INFO">${href} = http://demo.guru99.com/payment-gateway/index.php</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:14.530455" elapsed="1.023497"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:15.554918" elapsed="0.000672"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.35")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:14.530455" elapsed="1.025135"/>
+</iter>
+<iter>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2024-11-01T12:40:16.569378" level="INFO">${href} = http://demo.guru99.com/test/newtours/</msg>
+<var>${href}</var>
+<arg>${i}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2024-11-01T12:40:15.555915" elapsed="1.013463"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${href}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-01T12:40:16.570209" elapsed="0.001162"/>
+</kw>
+<var name="${i}">&lt;selenium.webdriver.remote.webelement.WebElement (session="8bb8868e3c28462a9196838bb1681549", element="f.340D02DBDF287E549EF54A0F70FB7620.d.21D4477FB3B266E6128FC48927B1CEB7.e.4")&gt;</var>
+<status status="PASS" start="2024-11-01T12:40:15.555915" elapsed="1.015456"/>
+</iter>
+<var>${i}</var>
+<value>@{links}</value>
+<status status="PASS" start="2024-11-01T12:39:45.704694" elapsed="30.866677"/>
+</for>
+<status status="PASS" start="2024-11-01T12:39:41.996372" elapsed="34.576005"/>
+</kw>
+<status status="PASS" start="2024-11-01T12:39:36.783070" elapsed="39.790298"/>
+</test>
+<status status="PASS" start="2024-11-01T12:39:36.058464" elapsed="40.518141"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Get Links">Get Links</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
